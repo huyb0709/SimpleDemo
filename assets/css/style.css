@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+
+    height: 100%;
+
+    padding: 0;
+
+    margin: 0;
+
+    background: #000;
+
+}
+
+canvas {
+
+    position: absolute;
+
+    width: 100%;
+
+    height: 100%;
+
+}
+
+#container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h4{
+    color: pink;
+    margin: 0;
+    font-size: xxx-large;
+    font-family: 'Alex Brush', cursive;
+}
+
+.heart{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 24px;
+    height: 24px;
+    background-image: url('../css/heart.png');
+    background-size: cover;
+    animation: animationHeart 4s ease-in-out infinite;
+    font-size: 16px;
+}
+
+@keyframes animationHeart{
+    0%{
+        transform: translate(0,0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translate(100px,60vh);
+    }
+}
